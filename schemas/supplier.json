@@ -7,7 +7,7 @@
     "id": {
       "description": "Unique ID (generated UUID) of the supplier",
       "type": "string",
-      "$ref": "raml-util/schemas/uuid.schema"
+      "$ref": "../../raml-util/schemas/uuid.schema"
     },
     "name": {
       "description": "Name of the supplier",
