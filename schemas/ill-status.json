@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
-  "title": "Status",
+  "title": "Single ILL Status",
   "description": "Represents a single interlibrary loan request status",
   "properties": {
     "id": {

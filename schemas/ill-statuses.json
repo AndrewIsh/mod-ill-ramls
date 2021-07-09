@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Collection of statuses",
+  "description": "Collection of ILL statuses",
   "type": "object",
   "properties": {
     "ill-statuses": {
@@ -9,7 +9,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "$ref": "status.json"
+        "$ref": "ill-status.json"
       }
     },
     "totalRecords": {
