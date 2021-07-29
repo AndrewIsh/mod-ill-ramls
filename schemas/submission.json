@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Submission",
+  "description": "Represents a single interlibrary loan submission",
+  "properties": {
+    "id": {
+      "description": "Unique ID (generated UUID) of the submission",
+      "type": "string",
+      "$ref": "../../raml-util/schemas/uuid.schema"
+    },
+    "userId": {
+      "description": "ID of the patron the submission was made by",
+      "type": "string",
+      "$ref": "../../raml-util/schemas/uuid.schema"
+    },
+    "itemId": {
+      "description": "ID of the local inventory item created to represent the requested item",
+      "type": "string",
+      "$ref": "../../raml-util/schemas/uuid.schema"
+    },
+    "submissionLocation": {
+      "description": "The location associated with the submission",
+      "type": "string",
+      "$ref": "../../raml-util/schemas/uuid.schema"
+    },
+    "statusId": {
+      "description": "Status of the submission",
+      "type": "string",
+      "$ref": "../../raml-util/schemas/uuid.schema"
+    },
+    "submissionDate": {
+      "description": "Date time when the submission was placed",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "supplierId",
+    "userId",
+    "submissionLocation",
+    "statusId",
+    "submissionDate"
+  ]
+}

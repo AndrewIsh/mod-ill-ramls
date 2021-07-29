@@ -4,12 +4,12 @@
   "type": "object",
   "properties": {
     "ill-statuses": {
-      "description": "List of interlibrary loan request statuses",
+      "description": "List of interlibrary loan submission statuses",
       "id": "ill-statuses",
       "type": "array",
       "items": {
         "type": "object",
-        "$ref": "ill-status.json"
+        "$ref": "submission-status.json"
       }
     },
     "totalRecords": {

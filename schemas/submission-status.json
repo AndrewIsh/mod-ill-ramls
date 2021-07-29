@@ -1,22 +1,21 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
-  "title": "Supplier",
-  "description": "Represents a single interlibrary loan supplying agency",
+  "title": "Single ILL Status",
+  "description": "Represents a single interlibrary loan submission status",
   "properties": {
     "id": {
-      "description": "Unique ID (generated UUID) of the supplier",
+      "description": "Unique ID (generated UUID) of the status",
       "type": "string",
       "$ref": "../../raml-util/schemas/uuid.schema"
     },
     "name": {
-      "description": "Name of the supplier",
+      "description": "Name of the status",
       "type": "string"
     }
   },
   "additionalProperties": false,
   "required": [
-    "id",
     "name"
   ]
 }

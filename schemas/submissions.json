@@ -1,15 +1,15 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Collection of suppliers",
+  "description": "Collection of submissions",
   "type": "object",
   "properties": {
-    "ill-suppliers": {
-      "description": "List of interlibrary loan suppliers",
-      "id": "ill-suppliers",
+    "ill-submissions": {
+      "description": "List of interlibrary loan submissions",
+      "id": "ill-submissions",
       "type": "array",
       "items": {
         "type": "object",
-        "$ref": "supplier.json"
+        "$ref": "submission.json"
       }
     },
     "totalRecords": {
@@ -17,7 +17,7 @@
     }
   },
   "required": [
-    "ill-suppliers",
+    "ill-submissions",
     "totalRecords"
   ]
 }
