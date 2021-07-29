@@ -4,6 +4,11 @@
   "title": "Request",
   "description": "Represents a single interlibrary loan request",
   "properties": {
+    "id": {
+      "description": "Unique local ID (generated UUID) of the request",
+      "type": "string",
+      "$ref": "../../raml-util/schemas/uuid.schema"
+    },
     "submissionId": {
       "description": "Unique ID (generated UUID) of the associated submission",
       "type": "string",
@@ -21,6 +26,7 @@
   },
   "additionalProperties": false,
   "required": [
+    "id",
     "submissionId",
     "supplierId",
     "metadata"
