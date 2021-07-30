@@ -3,9 +3,9 @@
   "description": "Collection of submissions",
   "type": "object",
   "properties": {
-    "ill-submissions": {
+    "submissions": {
       "description": "List of interlibrary loan submissions",
-      "id": "ill-submissions",
+      "id": "submissions",
       "type": "array",
       "items": {
         "type": "object",
@@ -17,7 +17,7 @@
     }
   },
   "required": [
-    "ill-submissions",
+    "submissions",
     "totalRecords"
   ]
 }

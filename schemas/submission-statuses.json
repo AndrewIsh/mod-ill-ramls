@@ -3,9 +3,9 @@
   "description": "Collection of ILL statuses",
   "type": "object",
   "properties": {
-    "ill-statuses": {
+    "statuses": {
       "description": "List of interlibrary loan submission statuses",
-      "id": "ill-statuses",
+      "id": "statuses",
       "type": "array",
       "items": {
         "type": "object",
@@ -17,7 +17,7 @@
     }
   },
   "required": [
-    "ill-statuses",
+    "statuses",
     "totalRecords"
   ]
 }

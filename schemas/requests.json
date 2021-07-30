@@ -3,9 +3,9 @@
   "description": "Collection of requests",
   "type": "object",
   "properties": {
-    "ill-requests": {
+    "requests": {
       "description": "List of interlibrary loan requests",
-      "id": "ill-requests",
+      "id": "requests",
       "type": "array",
       "items": {
         "type": "object",
@@ -17,7 +17,7 @@
     }
   },
   "required": [
-    "ill-requests",
+    "requests",
     "totalRecords"
   ]
 }
