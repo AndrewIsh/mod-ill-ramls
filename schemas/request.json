@@ -31,7 +31,6 @@
   },
   "additionalProperties": false,
   "required": [
-    "id",
     "submissionId",
     "supplierId",
     "metadata"
