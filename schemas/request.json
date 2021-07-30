@@ -19,6 +19,11 @@
       "type": "string",
       "$ref": "../../raml-util/schemas/uuid.schema"
     },
+    "itemId": {
+      "description": "Unique ID (generated UUID) of the item associated with the request",
+      "type": "string",
+      "$ref": "../../raml-util/schemas/uuid.schema"
+    },
     "metadata": {
       "description": "Supplier metadata associated with the request",
       "type": "string"

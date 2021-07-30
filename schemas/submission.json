@@ -14,11 +14,6 @@
       "type": "string",
       "$ref": "../../raml-util/schemas/uuid.schema"
     },
-    "itemId": {
-      "description": "ID of the local inventory item created to represent the requested item",
-      "type": "string",
-      "$ref": "../../raml-util/schemas/uuid.schema"
-    },
     "submissionLocation": {
       "description": "The location associated with the submission",
       "type": "string",
@@ -32,6 +27,10 @@
     "submissionDate": {
       "description": "Date time when the submission was placed",
       "type": "string"
+    },
+    "query": {
+      "description": "The CQL query used to create the submission",
+      "type":  "string"
     }
   },
   "additionalProperties": false,
