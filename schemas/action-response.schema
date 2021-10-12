@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Action response",
+  "description": "Represents a response to an ILL connector action",
+  "properties": {
+    "success": {
+      "description": "A payload representing a successful response",
+      "type": "object",
+      "$ref": "action-response-success.schema"
+    },
+    "error": {
+      "description": "A payload representing an unsuccessful response",
+      "type": "object",
+      "$ref": "action-response-error.schema"
+    }
+  },
+  "additionalProperties": false
+}

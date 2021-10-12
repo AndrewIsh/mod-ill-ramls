@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Action response success payload",
+  "description": "Represents the payload received in a success response",
+  "properties": {
+    "message": {
+      "description": "A message describing the response",
+      "type": "string"
+    },
+    "code": {
+      "description": "A code describing the response",
+      "type": "string"
+    },
+    "result": {
+      "description": "A representation of the result of the action",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "message",
+    "code",
+    "result"
+  ]
+}
