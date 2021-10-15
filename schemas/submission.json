@@ -26,19 +26,20 @@
     },
     "submissionDate": {
       "description": "Date time when the submission was placed",
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
-    "query": {
-      "description": "The CQL query used to create the submission",
+    "metadata": {
+      "description": "The ISO18626 JSON metadata used to create the submission",
       "type":  "string"
     }
   },
   "additionalProperties": false,
   "required": [
-    "supplierId",
     "userId",
     "submissionLocation",
     "statusId",
-    "submissionDate"
+    "submissionDate",
+    "metadata"
   ]
 }
