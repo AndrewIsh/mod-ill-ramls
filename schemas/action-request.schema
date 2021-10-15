@@ -17,8 +17,9 @@
       "type": "string"
     },
     "actionPayload": {
-      "description": "An arbitrary payload relating to the entity being acted upon",
-      "type": "object"
+      "description": "A JSON ISO18626 payload relating to the entity being acted upon",
+      "type": "object",
+      "$ref": "ISO18626-request/sa-request-payload.schema"
     }
   },
   "additionalProperties": false,

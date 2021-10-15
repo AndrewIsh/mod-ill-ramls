@@ -2,5 +2,17 @@
   "actionName": "submitRequest",
   "connector": "BLDSS",
   "entityId": "fc1d531e-a2fe-4772-9dd3-8ff490fac5fe",
-  "actionPayload": { "title":  "Attack of the Clones" }
+  "actionPayload": {
+    "BibliographicInfo": {
+      "SupplierUniqueRecordId": "ETOCRN370903711",
+      "TitleOfComponent": "Magnetic resonance in medicine"
+    },
+    "PublicationInfo": {
+      "Publisher": "O'Reilly"
+    },
+    "ServiceInfo": {
+      "RequestType": "New",
+      "ServiceType": "Copy"
+    }
+  }
 }
