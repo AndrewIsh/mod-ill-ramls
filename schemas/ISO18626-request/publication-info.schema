@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Action request publication information",
+  "description": "Publication information",
+  "properties": {
+    "Publisher": {
+      "description": "Name of the publisher",
+      "type": "string"
+    },
+    "PublicationType": {
+      "description": "Type of publication",
+      "type": "string"
+    },
+    "PublicationDate": {
+      "description": "Date of publication",
+      "type": "string"
+    },
+    "Place of publication": {
+      "description": "Place of publication, e.g. a city",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

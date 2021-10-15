@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Action request payload",
+  "description": "A payload based on ISO18626 describing a request",
+  "properties": {
+    "BibliographicInfo": {
+      "description": "Bibliographic information about the requested item",
+      "type": "object",
+      "$ref": "bibliographic-info.schema"
+    },
+    "PublicationInfo": {
+      "description": "Information about the publication",
+      "type": "object",
+      "$ref": "publication-info.schema"
+    },
+    "ServiceInfo": {
+      "description": "Information about the requested service",
+      "type": "object",
+      "$ref": "service-info.schema"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["BibliographicInfo", "ServiceInfo"]
+}

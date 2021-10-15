@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Bibliographic item ID",
+  "properties": {
+    "BibliographicItemIdentifierCode": {
+      "description": "Type of bibliographic item identifier",
+      "type": "string",
+      "enum": ["ISBN", "ISSN", "ISMN"]
+    },
+    "BibliographicItemIdentifier": {
+      "description": "A unique identifier for the item (e.g. the ISBN)",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["BibliographicItemIdentifierCode", "BibliographicItemIdentifier"]
+}

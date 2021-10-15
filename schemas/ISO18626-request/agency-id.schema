@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Agency ID",
+  "properties": {
+    "AgencyIdType": {
+      "description": "The type of agency ID",
+      "type": "string",
+      "enum": ["ISIL"]
+    },
+    "AgencyIdValue": {
+      "description": "The value of the agency ID",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["AgencyIdType", "AgencyIdValue"]
+}

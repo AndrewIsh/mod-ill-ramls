@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Request confirmation header",
+  "properties": {
+    "SupplyingAgencyId": {
+      "description": "Identification of the supplying library",
+      "$ref": "agency-id.schema"
+    },
+    "RequestingAgencyId": {
+      "description": "Identification of the requesting library",
+      "$ref": "agency-id.schema"
+    },
+    "Timestamp": {
+      "description": "Date and time of the confirmation transaction",
+      "type": "string",
+      "format": "date-time"
+    },
+    "RequestingAgencyRequestId": {
+      "description": "Requesting library’s request identification",
+      "type": "string"
+    },
+    "TimestampReceived": {
+      "description": "Date and time of the confirmed request transaction",
+      "type": "string",
+      "format": "date-time"
+    },
+    "MessageStatus": {
+      "description": "Value 'OK' or 'ERROR'",
+      "type": "string",
+      "enum": ["OK","ERROR"]
+    },
+    "ErrorData": {
+      "description": "If there are any errors, an error message is included",
+      "type": "string",
+      "enum": ["UnsupportedActionType", "UnsupportedReasonforMessageType", "UnrecognisedDataElement", "UnrecognisedDataElement", "UnrecognisedDataElement"]
+    }
+  },
+  "additionalProperties": false,
+  "required": ["Timestamp","TimestampReceived","MessageStatus"]
+}

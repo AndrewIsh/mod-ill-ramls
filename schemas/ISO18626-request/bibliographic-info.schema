@@ -1,0 +1,74 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Action request bibliographic information",
+  "description": "Bibliographic information",
+  "properties": {
+    "SupplierUniqueRecordId": {
+      "description": "The supplying library internal unique identifier for the requested item",
+      "type": "string"
+    },
+    "Title": {
+      "description": "Title of the requested item",
+      "type": "string"
+    },
+    "Author": {
+      "description": "Author of the requested item",
+      "type": "string"
+    },
+    "Subtitle": {
+      "description": "Subtitle of the requested item",
+      "type": "string"
+    },
+    "SeriesTitle": {
+      "description": "Title of the series",
+      "type": "string"
+    },
+    "Edition": {
+      "description": "Number of the edition",
+      "type": "string"
+    },
+    "TitleOfComponent": {
+      "description": "Title of the component part (e.g. article)",
+      "type": "string"
+    },
+    "AuthorOfComponent": {
+      "description": "Author of the component part",
+      "type": "string"
+    },
+    "Volume": {
+      "description": "Volume number",
+      "type": "string"
+    },
+    "Issue": {
+      "description": "Issue number",
+      "type": "string"
+    },
+    "PagesRequested": {
+      "description": "Page from and page to",
+      "type": "string"
+    },
+    "EstimatedNoPages": {
+      "description": "Expected number of pages",
+      "type": "string"
+    },
+    "BibliographicItemId": {
+      "description": "Identification of a physical or electronic object",
+      "type": "object",
+      "schema": "bibliographic-item-id.schema"
+    },
+    "Sponsor": {
+      "description": "Person or organization sponsoring the publication",
+      "type": "string"
+    },
+    "InformationSource": {
+      "description": "Description of where bibliographic information was found",
+      "type": "string"
+    },
+    "BibliographicRecordId": {
+      "description": "Identification of a bibliographic record",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

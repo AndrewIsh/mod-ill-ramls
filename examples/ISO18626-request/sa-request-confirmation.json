@@ -1,0 +1,9 @@
+{
+  "Header": {
+    "SupplyingAgencyId": "TK421",
+    "RequestingAgencyId": "7e6d3491-4e27-4c5b-a984-bba02f5c4327",
+    "Timestamp": "20211014T11:17:00Z",
+    "TimestampReceived": "20211014T11:17:02Z",
+    "MessageStatus": "OK"
+  }
+}

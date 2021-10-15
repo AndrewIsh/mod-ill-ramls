@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Action request service information",
+  "description": "Service information",
+  "properties": {
+    "RequestType": {
+      "description": "Type of request (new, retry or reminder). If no request type is specified, the default is 'new'",
+      "type": "string",
+      "enum": ["New", "Retry", "Reminder"]
+    },
+    "RequestSubType": {
+      "description": "Sub type to qualify the request",
+      "type": "string",
+      "enum": ["BookingRequest", "MultipleItemRequest", "PatronRequest", "TransferRequest", "SupplyingLibrarysChoice"]
+    },
+    "RequestingAgencyPreviousRequestId": {
+      "description": "Requesting agency’s previous request number when a retry is sent with updated data based on ReasonRetry",
+      "type": "string"
+    },
+    "ServiceType": {
+      "description": "Type of service. Values: Copy, Loan or CopyOrLoan.",
+      "type": "string",
+      "enum": ["Copy", "Loan", "CopyOrLoan"]
+    },
+    "ServiceLevel": {
+      "description": "Level of service",
+      "type": "string"
+    },
+    "PreferredFormat": {
+      "description": "Format of medium requested",
+      "type": "string"
+    },
+    "NeedBeforeDate": {
+      "description": "The request is not relevant after the stated date/time.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "CopyrightCompliance": {
+      "description": "The requesting library’s copyright compliance",
+      "type": "string"
+    },
+    "AnyEdition": {
+      "description": "Values Y or N. Yes for yes to any edition. No if only the specified edition is acceptable.",
+      "type": "string",
+      "enum": ["Y", "N"]
+    },
+    "StartDate": {
+      "description": "Start date for a Booking (RequestSubType)",
+      "type": "string",
+      "format": "date-time"
+    },
+    "EndDate": {
+      "description": "End date for a Booking (RequestSubType)",
+      "type": "string",
+      "format": "date-time"
+    },
+    "Note": {
+      "description": "Human readable note",
+      "type": "string"
+    }
+  },
+  "required": ["ServiceType"],
+  "additionalProperties": false
+}
