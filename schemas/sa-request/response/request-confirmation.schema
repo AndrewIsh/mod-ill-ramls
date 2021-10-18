@@ -6,7 +6,7 @@
     "Header": {
       "description": "Administrative information",
       "type": "object",
-      "$ref": "sa-request-confirmation-header.schema"
+      "$ref": "request-confirmation-header.schema"
     }
   },
   "additionalProperties": false,

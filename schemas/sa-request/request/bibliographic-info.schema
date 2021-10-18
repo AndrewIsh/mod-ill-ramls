@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
-  "title": "Action request bibliographic information",
+  "title": "Request bibliographic information",
   "description": "Bibliographic information",
   "properties": {
     "SupplierUniqueRecordId": {

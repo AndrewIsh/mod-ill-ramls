@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
-  "title": "Request",
-  "description": "Represents a single interlibrary loan request",
+  "title": "Local request",
+  "description": "Represents a single interlibrary loan request local record",
   "properties": {
     "id": {
       "description": "Unique local ID (generated UUID) of the request",

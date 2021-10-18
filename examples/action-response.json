@@ -1,7 +1,0 @@
-{
-  "success": {
-    "message": "A message relating to the success response",
-    "code": "A code relating to the success response",
-    "result": "{\"title\":\"The Empire Strikes Back\"}"
-  }
-}

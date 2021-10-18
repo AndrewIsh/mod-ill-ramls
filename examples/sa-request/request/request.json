@@ -1,0 +1,8 @@
+{
+  "actionName": "submitRequest",
+  "connector": "BLDSS",
+  "entityId": "fc1d531e-a2fe-4772-9dd3-8ff490fac5fe",
+  "actionPayload": {
+    "$ref": "sa-request-payload.json"
+  }
+}

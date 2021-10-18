@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Supplying agency request",
+  "description": "Represents an ILL connector request",
+  "properties": {
+    "connector": {
+      "description": "The name of the connector the request is destined for",
+      "type": "string"
+    },
+    "localRequestId": {
+      "description": "The local ID of the request being made to the supplier",
+      "type": "string"
+    },
+    "payload": {
+      "description": "A JSON ISO18626 payload relating to the request",
+      "type": "object",
+      "$ref": "request-payload.schema"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["connector","localRequestId","payload"]
+}

@@ -1,10 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Collection of requests",
+  "description": "Collection of local requests",
   "type": "object",
   "properties": {
     "requests": {
-      "description": "List of interlibrary loan requests",
+      "description": "List of local interlibrary loan requests records",
       "id": "requests",
       "type": "array",
       "items": {
