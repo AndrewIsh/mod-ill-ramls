@@ -12,7 +12,7 @@
       "description": "The local ID of the request being made to the supplier",
       "type": "string"
     },
-    "metadata": {
+    "saRequestMetadata": {
       "description": "A JSON ISO18626 payload relating to the request",
       "type": "object",
       "properties": {

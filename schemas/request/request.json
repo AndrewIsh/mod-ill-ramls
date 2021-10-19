@@ -24,7 +24,7 @@
       "type": "string",
       "$ref": "../../../raml-util/schemas/uuid.schema"
     },
-    "metadata": {
+    "requestMetadata": {
       "description": "Supplier metadata associated with the request",
       "type": "string"
     }

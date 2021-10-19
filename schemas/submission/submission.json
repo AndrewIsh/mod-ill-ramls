@@ -29,7 +29,7 @@
       "type": "string",
       "format": "date-time"
     },
-    "metadata": {
+    "submissionMetadata": {
       "description": "The ISO18626 JSON metadata used to create the submission",
       "type":  "object",
       "$ref": "submission-metadata.schema"
