@@ -7,17 +7,17 @@
     "BibliographicInfo": {
       "description": "Bibliographic information about the requested item",
       "type": "object",
-      "$ref": "../ISO18626/bibliographic-info.schema"
+      "$ref": "../../ISO18626/bibliographic-info.schema"
     },
     "PublicationInfo": {
       "description": "Information about the publication",
       "type": "object",
-      "$ref": "../ISO18626/publication-info.schema"
+      "$ref": "../../ISO18626/publication-info.schema"
     },
     "ServiceInfo": {
       "description": "Information about the requested service",
       "type": "object",
-      "$ref": "../ISO18626/service-info.schema"
+      "$ref": "../../ISO18626/service-info.schema"
     }
   },
   "additionalProperties": false,
