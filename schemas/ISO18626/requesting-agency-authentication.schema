@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Authentication in supplying library system of the requesting library",
+  "properties": {
+    "AccountId": {
+      "description": "The customer number in supplying library database of other libraries",
+      "type": "string"
+    },
+    "SecurityCode": {
+      "description": "Password, PIN code or similar function",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["AccountId", "SecurityCode"]
+}
