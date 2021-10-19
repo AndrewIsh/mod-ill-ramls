@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Electronic address",
+  "properties": {
+    "ElectronicAddressType": {
+      "description": "Type of electronic address",
+      "type": "string",
+      "enum": ["Chat", "Email", "FTP", "Skype"]
+    },
+    "ElectronicAddressData": {
+      "description": "Value of the electronic address",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Requested delivery info",
+  "description": "A prioritized list of suggested delivery methods, each with its own delivery address",
+  "properties": {
+    "SortOrder": {
+      "description": "Value from 1 to 99 according to the order",
+      "type": "string"
+    },
+    "Address": {
+      "description": "Description of the delivery address.",
+      "type": "object",
+      "oneOf": [
+        { "$ref": "electronic-address.schema" },
+        { "$ref":  "physical-address.schema" }
+      ]
+    }
+  },
+  "additionalProperties": false
+}

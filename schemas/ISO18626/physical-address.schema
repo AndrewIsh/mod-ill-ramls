@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Physical address",
+  "properties": {
+    "Line1": {
+      "description": "Address - first line",
+      "type": "string"
+    },
+    "Line2": {
+      "description": "Address - second line",
+      "type": "string"
+    },
+    "Locality": {
+      "description": "Locality of the library/agency or the contact person",
+      "type": "string"
+    },
+    "PostalCode": {
+      "description": "Postal code according to the rules of the country",
+      "type": "string"
+    },
+    "Region": {
+      "description": "Region symbol as specified in ISO 3166-2",
+      "type": "string"
+    },
+    "Country": {
+      "description": "Country symbol as specified in ISO 3166-1",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}
