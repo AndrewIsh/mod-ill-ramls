@@ -5,11 +5,11 @@
   "properties": {
     "SupplyingAgencyId": {
       "description": "Identification of the supplying library",
-      "$ref": "../request/agency-id.schema"
+      "$ref": "agency-id.schema"
     },
     "RequestingAgencyId": {
       "description": "Identification of the requesting library",
-      "$ref": "../request/agency-id.schema"
+      "$ref": "agency-id.schema"
     },
     "Timestamp": {
       "description": "Date and time of the confirmation transaction",

@@ -6,7 +6,7 @@
     "Header": {
       "description": "Administrative information",
       "type": "object",
-      "$ref": "request-confirmation-header.schema"
+      "$ref": "../../ISO18626/request-confirmation-header.schema"
     }
   },
   "additionalProperties": false,

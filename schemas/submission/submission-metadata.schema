@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Submission metadata",
+  "description": "A payload based on ISO18626 describing a submission",
+  "properties": {
+    "BibliographicInfo": {
+      "description": "Bibliographic information about the requested item",
+      "type": "object",
+      "$ref": "../ISO18626/bibliographic-info.schema"
+    },
+    "PublicationInfo": {
+      "description": "Information about the publication",
+      "type": "object",
+      "$ref": "../ISO18626/publication-info.schema"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["BibliographicInfo"]
+}

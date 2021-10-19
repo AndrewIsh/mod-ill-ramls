@@ -31,7 +31,8 @@
     },
     "metadata": {
       "description": "The ISO18626 JSON metadata used to create the submission",
-      "type":  "string"
+      "type":  "object",
+      "$ref": "submission-metadata.schema"
     }
   },
   "additionalProperties": false,

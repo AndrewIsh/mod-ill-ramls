@@ -12,12 +12,12 @@
       "description": "The local ID of the request being made to the supplier",
       "type": "string"
     },
-    "payload": {
+    "metadata": {
       "description": "A JSON ISO18626 payload relating to the request",
       "type": "object",
-      "$ref": "request-payload.schema"
+      "$ref": "../../ISO18626/metadata.schema"
     }
   },
   "additionalProperties": false,
-  "required": ["connector","localRequestId","payload"]
+  "required": ["connector","localRequestId","metadata"]
 }
