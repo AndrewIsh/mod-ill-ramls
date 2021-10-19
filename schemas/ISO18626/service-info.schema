@@ -25,11 +25,13 @@
     },
     "ServiceLevel": {
       "description": "Level of service",
-      "type": "string"
+      "type": "string",
+      "enum": ["Express","Normal","Rush","SecondaryMail","Standard","Urgent"]
     },
     "PreferredFormat": {
       "description": "Format of medium requested",
-      "type": "string"
+      "type": "string",
+      "enum": ["Blu-ray","Braille","CassetteTape","CD","CD-ROM","Daisy-ROM","DVD","JPEG","LargePrint","LP","Microform","MP3","Multimedia","PaperCopy","PDF","Printed","Tape","TIFF","VHS"]
     },
     "NeedBeforeDate": {
       "description": "The request is not relevant after the stated date/time.",
@@ -38,7 +40,8 @@
     },
     "CopyrightCompliance": {
       "description": "The requesting library’s copyright compliance",
-      "type": "string"
+      "type": "string",
+      "enum": ["AU-CopyRCatS183ComW", "AU-CopyRCatS183State", "AU-CopyrightActS49", "AU-CopyrightActS50–1", "AU-CopyrightActS50–7A", "AU-CopyrightCleared", "AU-GenBus", "NZ-CopyrightActS54", "NZ-CopyrightActS55", "Other", "UK-CopyRFeePaid", "UK-FairDealing", "US-CCG", "US-CCL"]
     },
     "AnyEdition": {
       "description": "Values Y or N. Yes for yes to any edition. No if only the specified edition is acceptable.",
