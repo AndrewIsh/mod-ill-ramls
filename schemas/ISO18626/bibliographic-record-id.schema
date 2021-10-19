@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Bibliographic item ID",
+  "properties": {
+    "BibliographicRecordIdentifierCode": {
+      "description": "The type of bibliographic record identifier",
+      "type": "string",
+      "enum": ["AMICUS","BL","FAUST","JNB","LA","LCCN","Medline","NCID","OCLC","PMID","TP"]
+    },
+    "BibliographicRecordIdentifier": {
+      "description": "A unique identifier for the record (e.g. the OCLC record number or LC control number)",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

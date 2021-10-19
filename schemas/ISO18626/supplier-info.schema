@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "SupplierInfo",
+  "description": "When a request is sent to a brokering institution, the requesting library may provide a list of potential suppliers (in preference order) intended primarily for requests sent to brokers, but may be used in other circumstances as well.",
+  "properties": {
+    "SortOrder": {
+      "description": "Value from 1 to 99 defining the order of preference of use",
+      "type": "string"
+    },
+    "SupplierCode": {
+      "description": "Code defining a potential supplier",
+      "type": "object",
+      "$ref": "agency-id.schema"
+    },
+    "SupplierDescription": {
+      "description": "Textual information about supplier",
+      "type": "string"
+    },
+    "BibliographicRecordId": {
+      "description": "Identification of a bibliographic record used",
+      "type": "object",
+      "$ref": "bibliographic-record-id.schema"
+    }
+  },
+  "additionalProperties": false
+}

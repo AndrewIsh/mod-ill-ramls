@@ -67,7 +67,8 @@
     },
     "BibliographicRecordId": {
       "description": "Identification of a bibliographic record",
-      "type": "string"
+      "type": "object",
+      "$ref": "bibliographic-record-id.schema"
     }
   },
   "additionalProperties": false
