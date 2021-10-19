@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Requesting agency information",
+  "description": "Details of the requesting agency",
+  "properties": {
+    "Name": {
+      "description": "Name of the requesting agency",
+      "type": "string"
+    },
+    "ContactName": {
+      "description": "Name of contact. For example, ILL staff member",
+      "type": "string"
+    },
+    "Address": {
+      "description": "Name of contact. For example, ILL staff member",
+      "type": "object",
+      "oneOf": [
+        { "$ref": "physical-address.schema" },
+        { "$ref": "electronic-address.schema" }
+      ]
+    }
+  },
+  "additionalProperties": false
+}

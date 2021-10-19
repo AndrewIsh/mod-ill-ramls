@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "BillingInfo",
+  "description": "Information about how the requesting agency expects to be billed for and pay for the item",
+  "properties": {
+    "PaymentMethod": {
+      "description": "The preferred payment method",
+      "type": "string",
+      "enum": ["BankTransfer", "CreditCard", "DebitCard", "EFTS", "IBS", "IIBS", "IFLAVoucher", "IFM", "LAPS", "Paypal"]
+    },
+    "MaximumCosts": {
+      "description": "The highest amount the requesting agency is prepared to pay for the service.",
+      "type": "object",
+      "$ref": "costs.schema"
+    },
+    "BillingMethod": {
+      "description": "Preferred billing method",
+      "type": "string",
+      "enum": ["Account",  "FreeOfCharge", "Invoice", "Other", "ReciprocityAgreement"]
+    },
+    "BillingName": {
+      "description": "Name of person in finance department, etc.",
+      "type": "string"
+    },
+    "Address": {
+      "description": "Description of the billing address",
+      "type": "object",
+      "oneOf": [
+        { "$ref":  "physical-address.schema" },
+        { "$ref":  "electronic-address.schema" }
+      ]
+    }
+  },
+  "additionalProperties": false
+}

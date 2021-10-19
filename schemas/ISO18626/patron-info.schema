@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "PatronInfo",
+  "description": "Details of the patron for whom the request is being made.",
+  "properties": {
+    "PatronId": {
+      "description": "Identification of the patron",
+      "type": "string"
+    },
+    "Surname": {
+      "description": "Surname of the patron",
+      "type": "string"
+    },
+    "GivenName": {
+      "description": "First name of the patron",
+      "type": "string"
+    },
+    "PatronType": {
+      "description": "Type of patron",
+      "type": "string",
+      "enum": ["Adult", "Child", "Faculty", "GraduateStudent", "Researcher", "Staff", "Student", "UnderGraduateStudent"]
+    },
+    "SendToPatron": {
+      "description": "Only used with value 'Y' if requesting library asks the supplying library to send the requested resource directly to the patron",
+      "type": "string",
+      "enum": ["Y"]
+    },
+    "Address": {
+      "description": "Description of how to contact the patron.",
+      "type": "object",
+      "oneOf": [
+        { "$ref": "physical-address.schema" },
+        { "$ref": "electronic-address.schema" }
+      ]
+    }
+  },
+  "additionalProperties": false
+}

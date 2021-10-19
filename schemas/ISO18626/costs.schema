@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Costs",
+  "description": "The cost for the request",
+  "properties": {
+    "CurrencyCode": {
+      "description": "Currency symbol as specified in ISO 4217",
+      "type": "string"
+    },
+    "MonetaryValue": {
+      "description": "Amount of money",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}
