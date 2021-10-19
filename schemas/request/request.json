@@ -33,6 +33,6 @@
   "required": [
     "submissionId",
     "supplierId",
-    "metadata"
+    "requestMetadata"
   ]
 }

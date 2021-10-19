@@ -35,5 +35,5 @@
     }
   },
   "additionalProperties": false,
-  "required": ["connector","localRequestId","metadata"]
+  "required": ["connector","localRequestId","saRequestMetadata"]
 }

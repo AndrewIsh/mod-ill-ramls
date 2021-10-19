@@ -41,6 +41,6 @@
     "submissionLocation",
     "statusId",
     "submissionDate",
-    "metadata"
+    "submissionMetadata"
   ]
 }
