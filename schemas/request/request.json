@@ -7,22 +7,22 @@
     "id": {
       "description": "Unique local ID (generated UUID) of the request",
       "type": "string",
-      "$ref": "../../raml-util/schemas/uuid.schema"
+      "$ref": "../../../raml-util/schemas/uuid.schema"
     },
     "submissionId": {
       "description": "Unique ID (generated UUID) of the associated submission",
       "type": "string",
-      "$ref": "../../raml-util/schemas/uuid.schema"
+      "$ref": "../../../raml-util/schemas/uuid.schema"
     },
     "supplierId": {
       "description": "Unique ID (generated UUID) of the request supplier",
       "type": "string",
-      "$ref": "../../raml-util/schemas/uuid.schema"
+      "$ref": "../../../raml-util/schemas/uuid.schema"
     },
     "itemId": {
       "description": "Unique ID (generated UUID) of the item associated with the request",
       "type": "string",
-      "$ref": "../../raml-util/schemas/uuid.schema"
+      "$ref": "../../../raml-util/schemas/uuid.schema"
     },
     "metadata": {
       "description": "Supplier metadata associated with the request",
