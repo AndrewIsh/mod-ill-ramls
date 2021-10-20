@@ -57,7 +57,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "schema": "bibliographic-item-id.schema"
+        "$ref": "bibliographic-item-id.schema"
       }
     },
     "Sponsor": {
