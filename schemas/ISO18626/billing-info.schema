@@ -26,9 +26,9 @@
     "Address": {
       "description": "Description of the billing address",
       "type": "array",
-      "javaType": "org.folio.rest.jaxrs.model.BillingAddress",
       "items": {
-        "type": "object"
+        "type": "object",
+        "javaType": "org.folio.rest.jaxrs.model.BillingAddress"
       }
     }
   },
