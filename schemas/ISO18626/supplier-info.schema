@@ -21,6 +21,18 @@
       "description": "Identification of a bibliographic record used",
       "type": "object",
       "$ref": "bibliographic-record-id.schema"
+    },
+    "CallNumber": {
+      "description": "Indication of the shelf position of the resource",
+      "type": "string"
+    },
+    "SummaryHoldings": {
+      "description": "Textual description of summary level holdings",
+      "type": "string"
+    },
+    "AvailabilityNote": {
+      "description": "Information about availability",
+      "type": "string"
     }
   },
   "additionalProperties": false
