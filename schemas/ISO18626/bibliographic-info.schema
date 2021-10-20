@@ -54,8 +54,11 @@
     },
     "BibliographicItemId": {
       "description": "Identification of a physical or electronic object",
-      "type": "object",
-      "schema": "bibliographic-item-id.schema"
+      "type": "array",
+      "items": {
+        "type": "object",
+        "schema": "bibliographic-item-id.schema"
+      }
     },
     "Sponsor": {
       "description": "Person or organization sponsoring the publication",
@@ -67,8 +70,11 @@
     },
     "BibliographicRecordId": {
       "description": "Identification of a bibliographic record",
-      "type": "object",
-      "$ref": "bibliographic-record-id.schema"
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "bibliographic-record-id.schema"
+      }
     }
   },
   "additionalProperties": false

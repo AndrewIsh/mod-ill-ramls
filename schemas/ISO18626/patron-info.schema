@@ -28,8 +28,11 @@
     },
     "Address": {
       "description": "Description of how to contact the patron.",
-      "type": "object",
-      "javaType": "org.folio.rest.jaxrs.model.PatronAddress"
+      "javaType": "org.folio.rest.jaxrs.model.PatronAddress",
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
     }
   },
   "additionalProperties": false

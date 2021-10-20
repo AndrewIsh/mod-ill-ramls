@@ -11,8 +11,11 @@
     },
     "RequestSubType": {
       "description": "Sub type to qualify the request",
-      "type": "string",
-      "enum": ["BookingRequest", "MultipleItemRequest", "PatronRequest", "TransferRequest", "SupplyingLibrarysChoice"]
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["BookingRequest", "MultipleItemRequest", "PatronRequest", "TransferRequest", "SupplyingLibrarysChoice"]
+      }
     },
     "RequestingAgencyPreviousRequestId": {
       "description": "Requesting agency’s previous request number when a retry is sent with updated data based on ReasonRetry",
