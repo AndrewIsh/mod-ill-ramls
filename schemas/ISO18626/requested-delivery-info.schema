@@ -10,11 +10,7 @@
     },
     "Address": {
       "description": "Description of the delivery address.",
-      "type": "object",
-      "oneOf": [
-        { "$ref": "electronic-address.schema" },
-        { "$ref":  "physical-address.schema" }
-      ]
+      "type": "object"
     }
   },
   "additionalProperties": false

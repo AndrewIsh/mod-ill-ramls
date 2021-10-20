@@ -28,11 +28,7 @@
     },
     "Address": {
       "description": "Description of how to contact the patron.",
-      "type": "object",
-      "oneOf": [
-        { "$ref": "physical-address.schema" },
-        { "$ref": "electronic-address.schema" }
-      ]
+      "type": "object"
     }
   },
   "additionalProperties": false

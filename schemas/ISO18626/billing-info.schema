@@ -25,11 +25,7 @@
     },
     "Address": {
       "description": "Description of the billing address",
-      "type": "object",
-      "oneOf": [
-        { "$ref":  "physical-address.schema" },
-        { "$ref":  "electronic-address.schema" }
-      ]
+      "type": "object"
     }
   },
   "additionalProperties": false

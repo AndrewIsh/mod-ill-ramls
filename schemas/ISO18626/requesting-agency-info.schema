@@ -14,11 +14,7 @@
     },
     "Address": {
       "description": "Name of contact. For example, ILL staff member",
-      "type": "object",
-      "oneOf": [
-        { "$ref": "physical-address.schema" },
-        { "$ref": "electronic-address.schema" }
-      ]
+      "type": "object"
     }
   },
   "additionalProperties": false
