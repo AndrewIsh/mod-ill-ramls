@@ -3,12 +3,13 @@
   "type": "object",
   "title": "Request confirmation",
   "properties": {
-    "ConfirmationHeader": {
+    "Header": {
       "description": "Administrative information",
+      "javaType": "org.folio.rest.jaxrs.model.ConfirmationHeader",
       "type": "object",
       "$ref": "../../ISO18626/request-confirmation-header.schema"
     }
   },
   "additionalProperties": false,
-  "required": ["ConfirmationHeader"]
+  "required": ["Header"]
 }
