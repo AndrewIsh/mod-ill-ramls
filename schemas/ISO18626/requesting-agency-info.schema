@@ -14,7 +14,8 @@
     },
     "Address": {
       "description": "Name of contact. For example, ILL staff member",
-      "type": "object"
+      "type": "object",
+      "javaType": "org.folio.rest.jaxrs.model.RequestingAgencyAddress"
     }
   },
   "additionalProperties": false

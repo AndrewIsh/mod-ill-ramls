@@ -5,8 +5,8 @@
   "properties": {
     "Header": {
       "description": "Administrative information",
-      "javaType": "org.folio.rest.jaxrs.model.ConfirmationHeader",
       "type": "object",
+      "javaType": "org.folio.rest.jaxrs.model.ConfirmationHeader",
       "$ref": "../../ISO18626/request-confirmation-header.schema"
     }
   },

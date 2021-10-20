@@ -10,7 +10,8 @@
     },
     "Address": {
       "description": "Description of the delivery address.",
-      "type": "object"
+      "type": "object",
+      "javaType": "org.folio.rest.jaxrs.model.DeliveryAddress"
     }
   },
   "additionalProperties": false
