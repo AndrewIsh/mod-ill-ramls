@@ -3,12 +3,12 @@
   "type": "object",
   "title": "Request confirmation",
   "properties": {
-    "Header": {
+    "ConfirmationHeader": {
       "description": "Administrative information",
       "type": "object",
       "$ref": "../../ISO18626/request-confirmation-header.schema"
     }
   },
   "additionalProperties": false,
-  "required": ["Header"]
+  "required": ["ConfirmationHeader"]
 }
