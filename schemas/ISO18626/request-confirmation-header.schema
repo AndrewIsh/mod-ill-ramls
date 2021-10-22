@@ -33,8 +33,7 @@
     },
     "ErrorData": {
       "description": "If there are any errors, an error message is included",
-      "type": "string",
-      "enum": ["UnsupportedActionType", "UnsupportedReasonforMessageType", "UnrecognisedDataElement", "UnrecognisedDataValue", "BadlyFormedMessage"]
+      "type": "string"
     }
   },
   "additionalProperties": false,
