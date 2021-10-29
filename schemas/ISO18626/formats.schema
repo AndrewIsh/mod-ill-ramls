@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Formats",
+  "description": "Formats used by DeliveredFormat and PreferredFormat",
+  "type": "string",
+  "enum": ["Blu-ray","Braille","CassetteTape","CD","CD-ROM","Daisy-ROM","DVD","JPEG","LargePrint","LP","Microform","MP3","Multimedia","PaperCopy","PDF","Printed","Tape","TIFF","VHS"]
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Supplying Agency Message administrative information",
+  "description": "Administrative information",
+  "properties": {
+    "SupplyingAgencyId": {
+      "description": "Identification of supplying library",
+      "$ref": "agency-id.schema"
+    },
+    "RequestingAgencyId": {
+      "description": "Identification of requesting library",
+      "$ref": "agency-id.schema"
+    },
+    "Timestamp": {
+      "description": "Date and time of the transaction",
+      "type": "string",
+      "format": "date-time"
+    },
+    "RequestingAgencyRequestId": {
+      "description": "Requesting library’s request identification or number",
+      "type": "string"
+    },
+    "RequestingAgencyAuthentication": {
+      "description": "Authentication in supplying library system of the requesting library"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["SupplyingAgencyId", "RequestingAgencyId", "Timestamp","RequestingAgencyRequestId"]
+}

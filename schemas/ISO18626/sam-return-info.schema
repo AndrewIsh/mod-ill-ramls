@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Supplying Agency Message return info",
+  "description": "If the Supplier asks the Requester to return the item to another address",
+  "properties": {
+    "ReturnAgencyId": {
+      "description": "Identification of the library to which the item should be returned (on request of the supplying library)",
+      "$ref": "agency-id.schema"
+    },
+    "Name": {
+      "description": "Name of the library to which the item should be returned.",
+      "type": "string"
+    },
+    "PhysicalAddress": {
+      "description": "Address to which the item is to be returned",
+      "$ref": "physical-address.schema"
+    }
+  },
+  "additionalProperties": false
+}

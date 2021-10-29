@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Supplying Agency Message",
+  "description": "Supplying Agency Message is a message sent from the supplying library to the requesting library. The message may be in response to a request or a message from the requesting library or a message initiated by the supplying library. In all these cases, the same message is used.",
+  "properties": {
+    "Header": {
+      "description": "Administrative information",
+      "type": "object",
+      "$ref": "sam-header.schema"
+    },
+    "MessageInfo": {
+      "description": "Message from the supplying library to the requesting agency",
+      "type": "object",
+      "$ref": "sam-message-info.schema"
+    },
+    "StatusInfo": {
+      "description": "Status information",
+      "type": "object",
+      "$ref": "sam-status-info.schema"
+    },
+    "DeliveryInfo": {
+      "description": "Information about the delivery",
+      "type": "object",
+      "$ref": "sam-delivery-info.schema"
+    },
+    "ReturnInfo": {
+      "description": "If the Supplier asks the Requester to return the item to another address",
+      "type": "string",
+      "$ref": "sam-return-info.schema"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["Header", "MessageInfo", "StatusInfo"]
+}

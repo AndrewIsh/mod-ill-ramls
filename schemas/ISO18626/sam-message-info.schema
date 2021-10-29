@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Supplying Agency Message info",
+  "description": "Message from the supplying library to the requesting agency",
+  "properties": {
+    "ReasonForMessage": {
+      "description": "A code defining the reason for the message",
+      "enum": ["RequestResponse", "StatusRequestResponse", "RenewResponse", "RenewResponse", "RenewResponse", "RenewResponse"]
+    },
+    "AnswerYesNo": {
+      "description": "Mandatory when ReasonForMessage is RenewResponse or CancelResponse",
+      "enum": ["Y", "N"]
+    },
+    "Note": {
+      "description": "Human readable note",
+      "type": "string"
+    },
+    "ReasonUnfilled": {
+      "description": "The reason why the request cannot be filled",
+      "enum": ["NonCirculating", "NotAvailableForILL", "NotHeld", "NotOnShelf", "PolicyProblem", "PoorCondition"]
+    },
+    "ReasonRetry": {
+      "description": "The reason why the request cannot be filled unless it is modified or repeated at a future date",
+      "enum": ["AtBindery", "CostExceedsMaxCost", "LoanPossible", "NotCurrentAvailableForILL", "NotFoundAsCited", "OnLoan", "OnOrder", "ReqDelDateNotPossible", "ReqDelMethodNotSupp"]
+    },
+    "OfferedCosts": {
+      "description": "Applied when ReasonRetry is used because actual costs exceed the MaximumCosts of the requesting library. The supplying library indicates what the actual cost shall be.",
+      "$ref": "costs.schema"
+    },
+    "RetryAfter": {
+      "description": "The date and time after which the retry request may be sent.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "RetryBefore": {
+      "description": "Date and time before which to send the retry request.",
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["ReasonForMessage"]
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Supplying Agency Message status info",
+  "description": "Status information",
+  "properties": {
+    "Status": {
+      "description": "Actual status of the request in the supplying library",
+      "enum": ["RequestReceived", "ExpectToSupply", "WillSupply", "Loaned", "Overdue", "Recalled", "RetryPossible", "Unfilled", "CopyCompleted", "LoanCompleted", "CompletedWithoutReturn", "Cancelled"]
+    },
+    "ExpectedDeliveryDate": {
+      "description": "Date and time the supplying library expects to deliver the item.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "DueDate": {
+      "description": "Date and time the item is expected to be back at the supplying library.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "LastChange": {
+      "description": "Date and time of the last status change",
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["Status", "LastChange"]
+}

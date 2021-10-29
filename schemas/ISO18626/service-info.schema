@@ -33,8 +33,7 @@
     },
     "PreferredFormat": {
       "description": "Format of medium requested",
-      "type": "string",
-      "enum": ["Blu-ray","Braille","CassetteTape","CD","CD-ROM","Daisy-ROM","DVD","JPEG","LargePrint","LP","Microform","MP3","Multimedia","PaperCopy","PDF","Printed","Tape","TIFF","VHS"]
+      "$ref": "formats.schema"
     },
     "NeedBeforeDate": {
       "description": "The request is not relevant after the stated date/time.",

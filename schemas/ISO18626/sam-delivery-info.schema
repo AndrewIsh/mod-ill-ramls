@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Supplying Agency Message delivery info",
+  "description": "Information about the delivery",
+  "properties": {
+    "DateSent": {
+      "description": "Date and time when the item was sent",
+      "type": "string",
+      "format": "date-time"
+    },
+    "ItemId": {
+      "description": "Value of Barcode or RFID-tag Id of the item being delivered",
+      "type": "string"
+    },
+    "SentVia": {
+      "description": "The service via which the requested item was sent",
+      "enum": ["ArticleExchange", "Ariel", "Email", "Mail", "Odyssey", "URL", "FTP"]
+    },
+    "SentToPatron": {
+      "description": "Value “Y” if the supplying library has sent the item directly to the patron and value “N” if the supplying library has not sent the item directly to the patron despite the fact that the requesting library asked for this service.",
+      "enum": ["Y", "N"]
+    },
+    "LoanCondition": {
+      "description": "Conditions for use of the item",
+      "enum": ["LibraryUseOnly", "WatchLibraryUseOnly", "NoReproduction", "SignatureRequired", "SpecCollSupervReq"]
+    },
+    "DeliveredFormat": {
+      "description": "Format of the delivered item",
+      "$ref": "formats.schema"
+    },
+    "DeliveryCosts": {
+      "description": "Amount the supplying library is charging the requesting library for the item and related service",
+      "$ref": "costs.schema"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["DateSent"]
+}
