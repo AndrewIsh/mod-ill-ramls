@@ -5,8 +5,7 @@
   "description": "Message from the supplying library to the requesting agency",
   "properties": {
     "ReasonForMessage": {
-      "description": "A code defining the reason for the message",
-      "enum": ["RequestResponse", "StatusRequestResponse", "RenewResponse", "CancelResponse", "StatusChange", "Notification"]
+      "$ref": "reason-for-message.schema"
     },
     "AnswerYesNo": {
       "description": "Mandatory when ReasonForMessage is RenewResponse or CancelResponse",
