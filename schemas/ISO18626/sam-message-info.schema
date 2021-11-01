@@ -7,7 +7,7 @@
     "ReasonForMessage": {
       "description": "A code defining the reason for the message",
       "type": "string",
-      "enum": ["RequestResponse", "StatusRequestResponse", "RenewResponse", "CancelResponse", "StatusChange", "Notification"],
+      "enum": ["RequestResponse", "StatusRequestResponse", "RenewResponse", "CancelResponse", "StatusChange", "Notification"]
     },
     "AnswerYesNo": {
       "description": "Mandatory when ReasonForMessage is RenewResponse or CancelResponse",
