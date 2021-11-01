@@ -32,7 +32,9 @@
       "enum": ["OK","ERROR"]
     },
     "ReasonForMessage": {
-      "$ref": "reason-for-message.schema"
+      "description": "A code defining the reason for the message",
+      "type": "string",
+      "enum": ["RequestResponse", "StatusRequestResponse", "RenewResponse", "CancelResponse", "StatusChange", "Notification"],
     },
     "ErrorData": {
       "description": "If there are any errors, an error message is included",

@@ -1,7 +1,0 @@
-{
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "ReasonForMessage",
-  "type": "string",
-  "description": "A code defining the reason for the message",
-  "enum": ["RequestResponse", "StatusRequestResponse", "RenewResponse", "CancelResponse", "StatusChange", "Notification"]
-}
