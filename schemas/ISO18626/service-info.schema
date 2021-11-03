@@ -37,8 +37,7 @@
     },
     "NeedBeforeDate": {
       "description": "The request is not relevant after the stated date/time.",
-      "type": "string",
-      "format": "date-time"
+      "type": "string"
     },
     "CopyrightCompliance": {
       "description": "The requesting library’s copyright compliance",
@@ -52,13 +51,11 @@
     },
     "StartDate": {
       "description": "Start date for a Booking (RequestSubType)",
-      "type": "string",
-      "format": "date-time"
+      "type": "string"
     },
     "EndDate": {
       "description": "End date for a Booking (RequestSubType)",
-      "type": "string",
-      "format": "date-time"
+      "type": "string"
     },
     "Note": {
       "description": "Human readable note",

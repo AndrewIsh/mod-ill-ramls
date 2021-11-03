@@ -6,8 +6,7 @@
   "properties": {
     "DateSent": {
       "description": "Date and time when the item was sent",
-      "type": "string",
-      "format": "date-time"
+      "type": "string"
     },
     "ItemId": {
       "description": "Value of Barcode or RFID-tag Id of the item being delivered",

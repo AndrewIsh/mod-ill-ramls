@@ -26,8 +26,7 @@
     },
     "submissionDate": {
       "description": "Date time when the submission was placed",
-      "type": "string",
-      "format": "date-time"
+      "type": "string"
     },
     "submissionMetadata": {
       "description": "The ISO18626 JSON metadata used to create the submission",

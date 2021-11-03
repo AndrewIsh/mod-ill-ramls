@@ -14,8 +14,7 @@
     },
     "Timestamp": {
       "description": "Date and time of the confirmation transaction",
-      "type": "string",
-      "format": "date-time"
+      "type": "string"
     },
     "RequestingAgencyRequestId": {
       "description": "Requesting library’s request identification",
@@ -23,8 +22,7 @@
     },
     "TimestampReceived": {
       "description": "Date and time of the confirmed request transaction",
-      "type": "string",
-      "format": "date-time"
+      "type": "string"
     },
     "MessageStatus": {
       "description": "Value 'OK' or 'ERROR'",

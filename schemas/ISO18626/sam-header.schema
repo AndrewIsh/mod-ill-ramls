@@ -14,8 +14,7 @@
     },
     "Timestamp": {
       "description": "Date and time of the transaction",
-      "type": "string",
-      "format": "date-time"
+      "type": "string"
     },
     "RequestingAgencyRequestId": {
       "description": "Requesting library’s request identification or number",

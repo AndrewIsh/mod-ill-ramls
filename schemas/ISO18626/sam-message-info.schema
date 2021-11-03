@@ -31,13 +31,11 @@
     },
     "RetryAfter": {
       "description": "The date and time after which the retry request may be sent.",
-      "type": "string",
-      "format": "date-time"
+      "type": "string"
     },
     "RetryBefore": {
       "description": "Date and time before which to send the retry request.",
-      "type": "string",
-      "format": "date-time"
+      "type": "string"
     }
   },
   "additionalProperties": false,

@@ -10,18 +10,15 @@
     },
     "ExpectedDeliveryDate": {
       "description": "Date and time the supplying library expects to deliver the item.",
-      "type": "string",
-      "format": "date-time"
+      "type": "string"
     },
     "DueDate": {
       "description": "Date and time the item is expected to be back at the supplying library.",
-      "type": "string",
-      "format": "date-time"
+      "type": "string"
     },
     "LastChange": {
       "description": "Date and time of the last status change",
-      "type": "string",
-      "format": "date-time"
+      "type": "string"
     }
   },
   "additionalProperties": false,
