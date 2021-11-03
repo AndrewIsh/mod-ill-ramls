@@ -7,7 +7,6 @@
   "properties": {
     "ReasonForMessage": {
       "description": "A code defining the reason for the message",
-      "javaType": "org.folio.rest.jaxrs.model.SAMIReasonForMessage",
       "type": "string",
       "enum": ["RequestResponse", "StatusRequestResponse", "RenewResponse", "CancelResponse", "StatusChange", "Notification"]
     },

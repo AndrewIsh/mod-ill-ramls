@@ -31,7 +31,6 @@
     },
     "ReasonForMessage": {
       "description": "A code defining the reason for the message",
-      "javaType": "org.folio.rest.jaxrs.model.SACHReasonForMessage",
       "type": "string",
       "enum": ["RequestResponse", "StatusRequestResponse", "RenewResponse", "CancelResponse", "StatusChange", "Notification"]
     },
