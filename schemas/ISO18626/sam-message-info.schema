@@ -2,10 +2,12 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "title": "Supplying Agency Message info",
+  "javaType": "org.folio.rest.jaxrs.model.SupplyingAgencyMessageInfo",
   "description": "Message from the supplying library to the requesting agency",
   "properties": {
     "ReasonForMessage": {
       "description": "A code defining the reason for the message",
+      "javaType": "org.folio.rest.jaxrs.model.SAMIReasonForMessage",
       "type": "string",
       "enum": ["RequestResponse", "StatusRequestResponse", "RenewResponse", "CancelResponse", "StatusChange", "Notification"]
     },

@@ -2,6 +2,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "title": "Supplying Agency Message administrative information",
+  "javaType": "org.folio.rest.jaxrs.model.SupplyingAgencyMessageHeader",
   "description": "Administrative information",
   "properties": {
     "SupplyingAgencyId": {
