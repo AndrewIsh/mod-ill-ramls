@@ -4,6 +4,11 @@
   "title": "Supplier message for storage",
   "description": "A supplier message to be passed for storage",
   "properties": {
+    "id": {
+      "description": "Unique ID (generated UUID) of the message",
+      "type": "string",
+      "$ref": "../../../raml-util/schemas/uuid.schema"
+    },
     "requestId": {
       "description": "Unique ID (generated UUID) of the associated request",
       "type": "string",
