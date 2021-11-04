@@ -1,0 +1,22 @@
+{
+  "Header": {
+    "SupplyingAgencyId": {
+      "AgencyIdType": "ISIL",
+      "AgencyIdValue": "MY_SUPPLIER_ID"
+    },
+    "RequestingAgencyId": {
+      "AgencyIdType": "ISIL",
+      "AgencyIdValue": "MY_REQUESTER_ID"
+    },
+    "Timestamp": "2012-08-07T12:32:31+0000",
+    "RequestingAgencyRequestId": "589a64e1-2d75-484b-9bc7-0a64b29bbfbd"
+  },
+  "MessageInfo": {
+    "ReasonForMessage": "RequestResponse",
+    "Note": "9a: Order confirmed Estimated despatch date: 08-08-2012"
+  },
+  "StatusInfo": {
+    "Status": "RequestReceived",
+    "LastChange": "2021-11-04T12: 33: 24+0000"
+  }
+}

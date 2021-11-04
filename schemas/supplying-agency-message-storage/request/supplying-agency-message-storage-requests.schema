@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Collection of supplying agency messages",
+  "type": "object",
+  "properties": {
+    "submissions": {
+      "description": "List of interlibrary loan supplying agency messages",
+      "id": "messages",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "supplying-agency-message-storage-request.schema"
+      }
+    },
+    "totalRecords": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "messages",
+    "totalRecords"
+  ]
+}
