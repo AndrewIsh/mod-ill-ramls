@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Supplier message for storage",
+  "description": "A supplier message to be passed for storage",
+  "properties": {
+    "requestId": {
+      "description": "Unique ID (generated UUID) of the associated request",
+      "type": "string",
+      "$ref": "../../../../raml-util/schemas/uuid.schema"
+    },
+    "message": {
+      "description": "The content of the message",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "requestId",
+    "message"
+  ]
+}
