@@ -5,7 +5,13 @@
       "submissionId": "cf23adf0-61ba-4887-bf82-956c4aae2260",
       "supplierId": "df7f4993-8c14-4a0f-ab63-93975ab01c76",
       "itemId": "cb20f34f-b773-462f-a091-b233cc96b9e6",
-      "requestMetadata": "{ \"id\": \"1234\", \"title\": \"The Journal of the Whills\", \"author\": \"The Whills\" }"
+      "requestMetadata": "{ \"id\": \"1234\", \"title\": \"The Journal of the Whills\", \"author\": \"The Whills\" }",
+      "metadata": {
+        "createdDate": "2021-11-19T00:00:00.000+0000",
+        "createdByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1",
+        "updatedDate": "2021-11-19T00:00:00.000+0000",
+        "updatedByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1"
+      }
     }
   ]
 }

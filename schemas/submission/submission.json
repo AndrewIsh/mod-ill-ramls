@@ -32,6 +32,11 @@
       "description": "The ISO18626 JSON metadata used to create the submission",
       "type":  "object",
       "$ref": "submission-metadata.schema"
+    },
+    "metadata": {
+      "type": "object",
+      "$ref": "../../../raml-util/schemas/metadata.schema",
+      "readonly": true
     }
   },
   "additionalProperties": false,

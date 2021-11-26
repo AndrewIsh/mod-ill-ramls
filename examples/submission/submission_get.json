@@ -9,6 +9,12 @@
   "mediumId": "11ffc94e-e213-4fae-bb7c-d90086d23b32",
   "serviceId": "1234",
   "cost":  "12.34",
+  "metadata": {
+    "createdDate": "2021-11-19T00:00:00.000+0000",
+    "createdByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1",
+    "updatedDate": "2021-11-19T00:00:00.000+0000",
+    "updatedByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1"
+  },
   "supplierMetadata": {
     "title": "The Journal of the Whills",
     "author": "The Whills"

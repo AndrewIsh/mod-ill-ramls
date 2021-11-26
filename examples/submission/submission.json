@@ -4,6 +4,12 @@
   "submissionLocation": "1e29e93c-56a6-4072-975a-e5e956e501dd",
   "statusId": "5827b7f7-7038-497c-9863-2c34844ee35a",
   "submissionDate": "2021-06-09T23:11:00-01:00",
+  "metadata": {
+    "createdDate": "2021-11-19T00:00:00.000+0000",
+    "createdByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1",
+    "updatedDate": "2021-11-19T00:00:00.000+0000",
+    "updatedByUserId": "28d1057c-d137-11e8-a8d5-f2801f1b9fd1"
+  },
   "submissionMetadata": {
     "BibliographicInfo": {
       "SupplierUniqueRecordId": "ETOCRN370903711",
