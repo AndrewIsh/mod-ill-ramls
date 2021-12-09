@@ -21,9 +21,9 @@
       "description": "Requesting library’s request identification or number",
       "type": "string"
     },
-    "RequestingAgencyAuthentication": {
-      "description": "Authentication in supplying library system of the requesting library"
-    }
+    "SupplyingAgencyRequestId": {
+      "description": "Supplying library’s request identification or number"
+     }
   },
   "additionalProperties": false,
   "required": ["SupplyingAgencyId", "RequestingAgencyId", "Timestamp","RequestingAgencyRequestId"]
