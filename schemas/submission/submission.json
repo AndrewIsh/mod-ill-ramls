@@ -28,6 +28,10 @@
       "description": "Date time when the submission was placed",
       "type": "string"
     },
+    "requestCount": {
+      "description": "A count of the number of requests associated with this submission",
+      "type": "string"
+    },
     "submissionMetadata": {
       "description": "The ISO18626 JSON metadata used to create the submission",
       "type":  "object",
