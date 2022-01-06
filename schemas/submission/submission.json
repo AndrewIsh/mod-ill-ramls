@@ -47,8 +47,6 @@
   "required": [
     "userId",
     "submissionLocation",
-    "statusId",
-    "submissionDate",
     "submissionMetadata"
   ]
 }
