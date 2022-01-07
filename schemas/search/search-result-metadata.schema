@@ -1,0 +1,92 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Search result metadata",
+  "description": "Represents a single ILL connector search result's metadata",
+  "properties": {
+    "titleLevel": {
+      "description": "A result's title level metadata ",
+      "type": "object",
+      "properties": {
+        "title": {
+          "description": "Title level title",
+          "type": "string"
+        },
+        "author": {
+          "description": "Title level author",
+          "type": "string"
+        },
+        "identifier": {
+          "description": "Title level identifier",
+          "type": "string"
+        },
+        "publisher": {
+          "description": "Title level publisher",
+          "type": "string"
+        },
+        "issn": {
+          "description": "Title level ISSN",
+          "type": "string"
+        },
+        "isbn": {
+          "description": "Title level ISBN",
+          "type": "string"
+        },
+        "ismn": {
+          "description": "Title level ISMN",
+          "type": "string"
+        },
+        "shelfmark": {
+          "description": "Title level shelfmark",
+          "type": "string"
+        }
+      }
+    },
+    "itemLevel": {
+      "description": "A result's item level metadata ",
+      "type": "object",
+      "properties": {
+        "year": {
+          "description": "Item level year",
+          "type": "string"
+        },
+        "volume": {
+          "description": "Item level volume",
+          "type": "string"
+        },
+        "issue": {
+          "description": "Item level issue",
+          "type": "string"
+        },
+        "part": {
+          "description": "Item level part",
+          "type": "string"
+        },
+        "edition": {
+          "description": "Item level edition",
+          "type": "string"
+        },
+        "season": {
+          "description": "Item level season",
+          "type": "string"
+        },
+        "month": {
+          "description": "Item level month",
+          "type": "string"
+        },
+        "day": {
+          "description": "Item level day",
+          "type": "string"
+        },
+        "type": {
+          "description": "Item level type",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "titleLevel"
+  ]
+}

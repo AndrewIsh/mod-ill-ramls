@@ -1,0 +1,20 @@
+{
+  "offset": 10,
+  "limit": 10,
+  "results": [
+    {
+      "id": "a61b3851-d450-43b1-8c50-7a0bdc1b0c2a",
+      "type": "book",
+      "available": true,
+      "metadata": {
+        "titleLevel": {
+          "title": "Return of the Jedi",
+          "author": "James Kahn",
+          "identifier": "605780d8-0766-4b21-989d-2db4ff4ba3e3",
+          "publisher": "Del Rey Books",
+          "isbn": "0-345-30767-4"
+        }
+      }
+    }
+  ]
+}
