@@ -1,6 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
+  "javaType": "org.folio.rest.jaxrs.model.SearchResultMetadata",
   "title": "Search result metadata",
   "description": "Represents a single ILL connector search result's metadata",
   "properties": {
