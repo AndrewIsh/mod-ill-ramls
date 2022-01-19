@@ -12,6 +12,10 @@
       "description": "Limit the number of elements returned in the response",
       "type": "integer"
     },
+    "totalRecords": {
+      "description": "How many records are in the full resultset",
+      "type": "integer"
+    },
     "results": {
       "description": "A search result set",
       "type": "array",
