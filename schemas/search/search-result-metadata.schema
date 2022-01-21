@@ -10,7 +10,7 @@
     },
     "PublicationInfo": {
       "$ref": "../ISO18626/publication-info.schema"
-    },
+    }
   },
   "additionalProperties": false,
   "required": [
