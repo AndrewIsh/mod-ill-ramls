@@ -14,8 +14,13 @@
       "type": "string",
       "$ref": "../../../raml-util/schemas/uuid.schema"
     },
-    "supplierId": {
-      "description": "Unique ID of the request supplier",
+    "supplierUid": {
+      "description": "Unique ID (generated UUID) of the associated supplier",
+      "type": "string",
+      "$ref": "../../../raml-util/schemas/uuid.schema"
+    },
+    "connectorId": {
+      "description": "The ID of the connector used to make the request to the supplier",
       "type": "string"
     },
     "itemId": {
@@ -28,6 +33,7 @@
       "type": "string"
     },
     "metadata": {
+      "description": "Internal metadata",
       "type": "object",
       "$ref": "../../../raml-util/schemas/metadata.schema",
       "readonly": true
