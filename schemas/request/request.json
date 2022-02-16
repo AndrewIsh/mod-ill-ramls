@@ -15,9 +15,8 @@
       "$ref": "../../../raml-util/schemas/uuid.schema"
     },
     "supplierId": {
-      "description": "Unique ID (generated UUID) of the request supplier",
-      "type": "string",
-      "$ref": "../../../raml-util/schemas/uuid.schema"
+      "description": "Unique ID of the request supplier",
+      "type": "string"
     },
     "itemId": {
       "description": "Unique ID (generated UUID) of the item associated with the request",
@@ -37,7 +36,6 @@
   "additionalProperties": false,
   "required": [
     "submissionId",
-    "supplierId",
-    "requestMetadata"
+    "supplierId"
   ]
 }
