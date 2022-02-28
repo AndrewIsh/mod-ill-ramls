@@ -3,7 +3,7 @@
   "description": "Collection of supplying agency messages",
   "type": "object",
   "properties": {
-    "submissions": {
+    "messages": {
       "description": "List of interlibrary loan supplying agency messages",
       "id": "messages",
       "type": "array",
