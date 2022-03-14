@@ -3,6 +3,7 @@
   "type": "object",
   "title": "Single ILL Status",
   "description": "Represents a single interlibrary loan submission status",
+  "javaType": "org.folio.rest.jaxrs.model.SubmissionStatus",
   "properties": {
     "id": {
       "description": "Unique ID (generated UUID) of the status",
@@ -16,6 +17,10 @@
     "metadata": {
       "type": "object",
       "$ref": "../../../raml-util/schemas/metadata.schema",
+      "readonly": true
+    },
+    "submissionCount": {
+      "type": "integer",
       "readonly": true
     }
   },
