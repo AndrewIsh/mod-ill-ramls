@@ -22,6 +22,10 @@
     "submissionCount": {
       "type": "integer",
       "readonly": true
+    },
+    "default": {
+      "type": "boolean",
+      "readonly": true
     }
   },
   "additionalProperties": false,

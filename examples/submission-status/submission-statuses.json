@@ -2,7 +2,9 @@
   "submission-statuses": [
     {
       "id": "cf23adf0-61ba-4887-bf82-956c4aae2260",
-      "name": "Requested"
+      "name": "Requested",
+      "submissionCount": 3,
+      "default": false
     }
   ]
 }
