@@ -19,6 +19,10 @@
       "type": "string",
       "$ref": "../../../raml-util/schemas/uuid.schema"
     },
+    "supplierRequestId": {
+      "description": "The supplier's ID for the request",
+      "type": "string"
+    },
     "connectorId": {
       "description": "The ID of the connector used to make the request to the supplier",
       "type": "string"
